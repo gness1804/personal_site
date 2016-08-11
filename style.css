@@ -17,7 +17,11 @@ a:hover {
   font-style: italic;
 }
 
-#header h1, ul {
+#header {
+  margin-top: 40px;
+}
+
+#header h1 {
   float: left;
 }
 
@@ -66,31 +70,37 @@ a:hover {
   #footer p {margin-right: 40px;}
 }
 
-.nav {
-  margin-top: 40px;
+.nav-bar-top {
+  margin: 50px 60px 0px 0px;
 }
 
-.nav li {
-  list-style-type: none;
-  display: inline;
+.dropdown { /* each dropdown item */
+  position: relative;
+  display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 15px;
   color: black;
 }
 
-.nav li:hover {
+.dropdown:hover {
   border: 1px solid rgb(185, 200, 186);
   border-radius: 5px;
   padding: 5px;
   color: rgb(22, 47, 212);
 }
 
+.dropdown-content { /* the content of dropdown menus that displays on hover */
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgb(185, 200, 186);
+  border-radius: 5px;
+  padding: 10px 5px 10px 5px;
+}
+
 @media screen and (max-width: 500px) { /* for smartphones */
   .nav {margin-bottom: 50px;}
   .nav li {display: block; border: 1px solid black; font-size: 30px; margin-top: 20px; text-align: center; background-color: rgb(224, 225, 240)}
-  .dropdown-menu {z-index: 1; position: fixed; min-height: 270px;}
-  .dropdown-menu li {background-color: white; padding: 5px;}
 }
 
 .nav-selected {
@@ -103,18 +113,6 @@ a:hover {
 
 .nav-selected:hover {
   color: white;
-}
-
-.dropdown-menu {
-  display: none;
-  background-color: rgb(224, 225, 240);
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 40px;
-}
-
-.dropdown-menu-show {
-  display: block;
 }
 
 .photos-home-main {

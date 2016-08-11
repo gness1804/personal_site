@@ -1,8 +1,9 @@
 $(document).ready(function () {
-  $(".websites").hover(function () {
-    $(".dropdown-menu").addClass("dropdown-menu-show");
-    setTimeout(function() {
-      $(".dropdown-menu").removeClass("dropdown-menu-show");
-    }, 5000);
+  $(".dropdown-content").hide();
+  $(".dropdown").hover(function () {
+    $(".dropdown-content").fadeIn();
+  });
+  $(".dropdown").mouseleave(function () {
+    $(".dropdown-content").fadeOut();
   })
 }); //end of jQuery body

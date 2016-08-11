@@ -1,0 +1,4 @@
+1.) Finish new dropdown design for desktops
+2.) Adopt menu design for tablets/smartphones (maybe just use block design from master branch?)
+3.) Fix aesthetic issues with dropdown menu items
+4.) (Opt.) Add a message saying "My book!" or some such when user hovers over my book image?
