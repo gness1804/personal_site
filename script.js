@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".dropdown-content").hide();
-  $(".dropdown").hover(function () {
+  $(".dd-show").hover(function () {
     $(".dropdown-content").fadeIn();
   });
-  $(".dropdown").mouseleave(function () {
+  $(".dd-show").mouseleave(function () {
     $(".dropdown-content").fadeOut();
   })
 }); //end of jQuery body
