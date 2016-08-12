@@ -114,19 +114,15 @@ a:hover {
   margin: 10px 0px 5px 0px;
 }
 
-.home-dropdown-item {
-  background-color: rgb(22, 47, 212) !important;
+.home {
+  background-color: blue !important;
 }
 
-.home-dropdown-item a {
-  border: 1px solid rgb(227, 215, 211);
-  border-radius: 5px;
-  padding: 5px;
+.home a {
   color: white !important;
-  background-color: rgb(22, 47, 212) !important;
 }
 
-.home-dropdown-item a:hover {
+.home a:hover {
   color: white !important;
 }
 

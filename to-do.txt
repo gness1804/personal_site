@@ -1,4 +1,1 @@
-
-2.) Adopt menu design for tablets/smartphones (maybe just use block design from master branch?)
-4.) (Opt.) Add a message saying "My book!" or some such when user hovers over my book image?
-5.) (Opt.) Write a snippet for dropdowns? (Improvement over the other one)
+Perhaps tweak the tablet interface.
