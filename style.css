@@ -26,7 +26,7 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) { /* for smartphones */
-  #header h1, ul {float: none;}
+  #header h1 {float: none;}
   #header h1 {text-align: center; padding-left: 0px;}
 }
 
@@ -114,6 +114,10 @@ a:hover {
   margin: 10px 0px 5px 0px;
 }
 
+.home-dropdown-item {
+  background-color: rgb(22, 47, 212) !important;
+}
+
 .home-dropdown-item a {
   border: 1px solid rgb(227, 215, 211);
   border-radius: 5px;
@@ -127,8 +131,8 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) { /* for smartphones */
-  .nav {margin-bottom: 50px;}
-  .nav li {display: block; border: 1px solid black; font-size: 30px; margin-top: 20px; text-align: center; background-color: rgb(224, 225, 240)}
+  .nav-bar-top {margin-bottom: 50px;}
+  .dropdown {display: block; border: 1px solid black; font-size: 30px; margin-top: 20px; text-align: center; background-color: rgb(224, 225, 240)}
 }
 
 .photos-home-main {
