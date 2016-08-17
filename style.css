@@ -23,6 +23,9 @@ a:hover {
 
 #header h1 {
   float: left;
+  font-family: 'Montserrat', cursive;
+  font-size: 44px;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 500px) { /* for smartphones */
@@ -33,12 +36,6 @@ a:hover {
 @media screen and (min-width: 501px) and (max-width: 800px) { /* for tablets */
   #header h1 {float: none; text-align: center;}
   #header {margin-bottom: 100px;}
-}
-
-#header h1 {
-  font-family: 'Montserrat', cursive;
-  font-size: 44px;
-  padding-left: 10px;
 }
 
 #header h1 a {
