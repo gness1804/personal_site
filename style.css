@@ -22,13 +22,12 @@ a:hover {
 }
 
 #header {
-  /*border: 1px solid transparent;*/
+  border: 1px solid transparent;
   border-radius: 5px;
   margin-top: 40px;
 }
 
-#header h1 {
-  float: left;
+h1 {
   font-family: 'Montserrat', cursive;
   font-size: 44px;
   padding-left: 10px;
@@ -88,6 +87,7 @@ a:hover {
   margin-right: 20px;
   font-size: 15px;
   color: black;
+  text-align: center;
 }
 
 .dropdown:hover {
