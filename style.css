@@ -35,6 +35,8 @@ h1 {
 
 @media screen and (max-width: 800px) { /* for smartphones and tablets */
   h1 {
+    margin: auto;
+    /*width: 100px;*/
     text-align: center;
   }
 
@@ -135,7 +137,16 @@ h1 {
     display: block;
   }
   .dropdown {
+    background-color: white;
+    border: 1px solid black;
     display: block;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .dropdown-content {
+    border: 1px solid black;
+    position: relative;
+    right: 0px;
   }
 }
 
