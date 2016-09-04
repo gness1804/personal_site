@@ -3,13 +3,13 @@
 }
 
 html {
-  font-family: 'Noto Sans', sans-serif;
   background: linear-gradient(to bottom, white, rgb(203, 202, 217));
+  font-family: 'Noto Sans', sans-serif;
 }
 
 a:link {
-  text-decoration: none;
   color: rgb(64, 37, 226);
+  text-decoration: none;
 }
 
 a:visited {
@@ -22,8 +22,8 @@ a:hover {
 }
 
 #header {
-  border: 1px solid transparent;
   border-radius: 5px;
+  border: 1px solid transparent;
   margin-top: 40px;
 }
 
@@ -40,75 +40,34 @@ h1 {
 
   h1 {
     margin: auto;
-    /*width: 100px;*/
     text-align: center;
   }
 
 }
 
-/*@media screen and (max-width: 500px) {
-  #header h1 {float: none;}
-  #header h1 {text-align: center; padding-left: 0px;}
-}
-
-@media screen and (min-width: 501px) and (max-width: 800px) {
-  #header h1 {float: none; text-align: center;}
-  #header {margin-bottom: 100px;}
-}*/
-
-/*#header h1 a {
-  color: black;
-  font-style: normal;
-}*/
-
-#footer {
-  border: 1px solid black;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 70px;
-}
-
-#footer p {
-  display: inline;
-  text-align: center;
-  margin-left: 50px;
-  padding-top: 60px;
-}
-
-/*@media screen and (max-width: 500px) {
-  #footer {clear: both; text-align: left;}
-  #footer p {margin-right: 40px;}
-}
-
-@media screen and (min-width: 501px) and (max-width: 800px) {
-  #footer {clear: both;}
-  #footer p {margin-right: 40px;}
-}*/
-
 .nav-bar-top {
   display: flex;
-  /*margin: 50px 60px 0px 0px;*/
   margin: 0 auto;
-  text-align: right;
   max-width: 600px;
+  text-align: right;
 }
 
 .dropdown { /* each dropdown item */
-  position: relative;
+  color: black;
   display: inline-block;
+  font-size: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 15px;
-  color: black;
+  position: relative;
   text-align: center;
 }
 
 .dropdown:hover {
-  border: 1px solid rgb(185, 200, 186);
   border-radius: 5px;
-  padding: 5px;
+  border: 1px solid rgb(185, 200, 186);
   color: rgb(22, 47, 212);
   font-style: italic;
+  padding: 5px;
 }
 
 .dropdown a:link {
@@ -120,15 +79,15 @@ h1 {
 }
 
 .dropdown-content { /* the content of dropdown menus that displays on hover */
-  position: absolute;
-  z-index: 1;
-  border: 1px solid rgb(185, 200, 186);
-  border-radius: 5px;
-  padding: 10px 5px 10px 5px;
-  min-width: 200px;
   background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 200, 186);
+  min-width: 200px;
+  padding: 10px 5px 10px 5px;
+  position: absolute;
   right: -73px;
   top: 30px;
+  z-index: 1;
 }
 
 .dropdown-content a {
@@ -140,6 +99,7 @@ h1 {
   .nav-bar-top {
     display: block;
   }
+
   .dropdown {
     background-color: white;
     border: 1px solid black;
@@ -147,11 +107,13 @@ h1 {
     font-size: 30px;
     margin-top: 20px;
   }
+
   .dropdown-content {
     border: 1px solid black;
     position: relative;
     right: 0px;
   }
+
 }
 
 .home {
@@ -166,13 +128,6 @@ h1 {
   color: white !important;
 }
 
-
-
-/*@media screen and (max-width: 500px) {
-  .nav-bar-top {margin-bottom: 50px;}
-  .dropdown {display: block; border: 1px solid black; font-size: 30px; margin-top: 20px; text-align: center; background-color: rgb(224, 225, 240)}
-}*/
-
 .photos-home-main {
   border: 1px solid transparent;
   display: block;
@@ -181,26 +136,27 @@ h1 {
 }
 
 .photos-home-main img {
-  padding-right: 5px;
   padding-left: 0px;
+  padding-right: 5px;
 }
 
-/*@media screen and (max-width: 500px) {
-  .photos-home-main {display: inline; padding-left: 10px;}
-  .photos-home-main img {max-width: 150px;}
-} */
-
 @media screen and (max-width: 800px) {
-  .photos-home-main {padding-left: 10px;}
-  .photos-home-main img {max-width: 200px; margin-top: 120px;}
-  /*#um {padding-left: 40px;}
-  #cover {padding-left: 120px;}*/
+  .photos-home-main {
+    padding-left: 10px;
+  }
+
+  .photos-home-main img {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    max-width: 200px;
+  }
+
 }
 
 .home-blurb {
-  position: relative;
-  max-width: 950px;
   margin: auto;
+  max-width: 950px;
+  position: relative;
 }
 
 .home-blurb img {
@@ -208,29 +164,27 @@ h1 {
 }
 
 .home-blurb p {
-  /*float: right;*/
-  position: absolute;
   left: 310px;
+  position: absolute;
   top: -24px;
   width: 650px;
 }
 
 .home-blurb p::first-letter {
-  font-weight: bold;
   font-size: 24px;
+  font-weight: bold;
 }
 
-/*@media screen and (max-width: 500px) {
-  .home-blurb {position: relative; left: -40px;}
-  .home-blurb p {width: 300px; text-align: center;}
-  .home-blurb img {display: none;}
+#footer {
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 70px;
+  text-align: center;
 }
 
-@media screen and (min-width: 501px) and (max-width: 800px) {
-  .home-blurb p {width: 300px; float: none; text-align: center; margin-left: 150px;}
-  .home-blurb img {display: none;}
-}*/
-
-#new-cairn {
-  color: red;
+#footer p {
+  display: inline;
+  margin-left: 50px;
+  padding-top: 60px;
+  text-align: center;
 }
