@@ -1,8 +1,14 @@
 $(document).ready(function () {
-  $(".websites").hover(function () {
-    $(".dropdown-menu").addClass("dropdown-menu-show");
-    setTimeout(function() {
-      $(".dropdown-menu").removeClass("dropdown-menu-show");
-    }, 5000);
-  })
+  $(".dropdown-content").hide();
+  $(".dd-show").hover(function () {
+    $(".dropdown-content").fadeIn();
+  });
+  $(".dd-show").mouseleave(function () {
+    $(".dropdown-content").fadeOut();
+  });
+  $(document).on("keydown", function(key) {
+    if (key.which === 66) { // "B"
+      $(".testing").toggleClass("border-test");
+      }
+    });
 }); //end of jQuery body

@@ -1,3 +1,7 @@
+.border-test {
+  border: 1px dotted red; /* temporary border toggled using jQuery */
+}
+
 html {
   font-family: 'Noto Sans', sans-serif;
   background: linear-gradient(to bottom, white, rgb(203, 202, 217));
@@ -17,24 +21,26 @@ a:hover {
   font-style: italic;
 }
 
-#header h1, ul {
-  float: left;
+#header {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+h1 {
+  font-family: 'Montserrat', cursive;
+  font-size: 44px;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 500px) { /* for smartphones */
-  #header h1, ul {float: none;}
+  #header h1 {float: none;}
   #header h1 {text-align: center; padding-left: 0px;}
 }
 
 @media screen and (min-width: 501px) and (max-width: 800px) { /* for tablets */
   #header h1 {float: none; text-align: center;}
   #header {margin-bottom: 100px;}
-}
-
-#header h1 {
-  font-family: 'Montserrat', cursive;
-  font-size: 44px;
-  padding-left: 10px;
 }
 
 #header h1 a {
@@ -66,63 +72,79 @@ a:hover {
   #footer p {margin-right: 40px;}
 }
 
-.nav {
-  margin-top: 40px;
+.nav-bar-top {
+  display: flex;
+  /*margin: 50px 60px 0px 0px;*/
+  margin: 0 auto;
+  text-align: right;
+  max-width: 600px;
 }
 
-.nav li {
-  list-style-type: none;
-  display: inline;
+.dropdown { /* each dropdown item */
+  position: relative;
+  display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 15px;
   color: black;
+  text-align: center;
 }
 
-.nav li:hover {
+.dropdown:hover {
   border: 1px solid rgb(185, 200, 186);
   border-radius: 5px;
   padding: 5px;
   color: rgb(22, 47, 212);
+  font-style: italic;
+}
+
+.dropdown a:link {
+  color: black !important;
+}
+
+.dropdown a:hover {
+  color: rgb(22, 47, 212) !important;
+}
+
+.dropdown-content { /* the content of dropdown menus that displays on hover */
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgb(185, 200, 186);
+  border-radius: 5px;
+  padding: 10px 5px 10px 5px;
+  min-width: 200px;
+  background-color: white;
+  right: -73px;
+  top: 30px;
+}
+
+.dropdown-content a {
+  display: block;
+  margin: 10px 0px 5px 0px;
+}
+
+.home {
+  background-color: blue !important;
+}
+
+.home a {
+  color: white !important;
+}
+
+.home a:hover {
+  color: white !important;
 }
 
 @media screen and (max-width: 500px) { /* for smartphones */
-  .nav {margin-bottom: 50px;}
-  .nav li {display: block; border: 1px solid black; font-size: 30px; margin-top: 20px; text-align: center; background-color: rgb(224, 225, 240)}
-  .dropdown-menu {z-index: 1; position: fixed; min-height: 270px;}
-  .dropdown-menu li {background-color: white; padding: 5px;}
-}
-
-.nav-selected {
-  border: 1px solid rgb(185, 200, 186);
-  border-radius: 5px;
-  padding: 5px;
-  color: white !important;
-  background-color: rgb(22, 47, 212) !important;
-}
-
-.nav-selected:hover {
-  color: white;
-}
-
-.dropdown-menu {
-  display: none;
-  background-color: rgb(224, 225, 240);
-  border: 1px solid black;
-  border-radius: 5px;
-  height: 40px;
-}
-
-.dropdown-menu-show {
-  display: block;
+  .nav-bar-top {margin-bottom: 50px;}
+  .dropdown {display: block; border: 1px solid black; font-size: 30px; margin-top: 20px; text-align: center; background-color: rgb(224, 225, 240)}
 }
 
 .photos-home-main {
-  padding: 150px;
+  border: 1px solid transparent;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 630px;
+  margin: 80px auto;
+  text-align: center;
 }
 
 .photos-home-main img {
@@ -144,6 +166,7 @@ a:hover {
 
 .home-blurb {
   max-width: 950px;
+  margin: auto;
 }
 
 .home-blurb img {
