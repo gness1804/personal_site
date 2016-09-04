@@ -5,5 +5,10 @@ $(document).ready(function () {
   });
   $(".dd-show").mouseleave(function () {
     $(".dropdown-content").fadeOut();
-  })
+  });
+  $(document).on("keydown", function(key) {
+    if (key.which === 66) { // "B"
+      $(".testing").toggleClass("border-test");
+      }
+    });
 }); //end of jQuery body
