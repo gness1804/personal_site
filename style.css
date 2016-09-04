@@ -113,7 +113,9 @@ h1 {
   border-radius: 5px;
   padding: 10px 5px 10px 5px;
   min-width: 200px;
-  background-color: rgb(233, 245, 241);
+  background-color: white;
+  right: -73px;
+  top: 30px;
 }
 
 .dropdown-content a {
