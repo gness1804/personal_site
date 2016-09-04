@@ -178,6 +178,7 @@ h1 {
   /*float: right;*/
   position: absolute;
   left: 310px;
+  top: -24px;
   width: 650px;
 }
 
