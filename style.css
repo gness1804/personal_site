@@ -164,6 +164,7 @@ h1 {
 
 .home-blurb {
   max-width: 950px;
+  margin: auto;
 }
 
 .home-blurb img {
