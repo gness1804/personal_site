@@ -166,12 +166,7 @@ h1 {
   color: white !important;
 }
 
-@media screen and (max-width: 800px) {
-  .photos-home-main {display: inline; padding-left: 10px;}
-  .photos-home-main img {max-width: 150px; margin-top: 120px;}
-  /*#um {padding-left: 40px;}
-  #cover {padding-left: 120px;}*/
-}
+
 
 /*@media screen and (max-width: 500px) {
   .nav-bar-top {margin-bottom: 50px;}
@@ -195,7 +190,12 @@ h1 {
   .photos-home-main img {max-width: 150px;}
 } */
 
-
+@media screen and (max-width: 800px) {
+  .photos-home-main {padding-left: 10px;}
+  .photos-home-main img {max-width: 200px; margin-top: 120px;}
+  /*#um {padding-left: 40px;}
+  #cover {padding-left: 120px;}*/
+}
 
 .home-blurb {
   position: relative;
