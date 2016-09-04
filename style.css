@@ -22,7 +22,7 @@ a:hover {
 }
 
 #header {
-  border: 1px solid transparent;
+  /*border: 1px solid transparent;*/
   border-radius: 5px;
   margin-top: 40px;
 }
@@ -74,7 +74,11 @@ a:hover {
 }
 
 .nav-bar-top {
-  margin: 50px 60px 0px 0px;
+  display: flex;
+  /*margin: 50px 60px 0px 0px;*/
+  margin: 0 auto;
+  text-align: right;
+  max-width: 600px;
 }
 
 .dropdown { /* each dropdown item */
@@ -135,11 +139,6 @@ a:hover {
 }
 
 .photos-home-main {
-  /*padding: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 630px;*/
   border: 1px solid transparent;
   display: block;
   margin: 80px auto;
