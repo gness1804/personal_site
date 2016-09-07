@@ -116,17 +116,11 @@ h1 {
 
 }
 
-.home {
-  background-color: blue !important;
-}
-
-.home a {
-  color: white !important;
-}
-
-.home a:hover {
-  color: white !important;
-}
+/*.home {
+  border: 1px solid rgb(185, 200, 186);
+  border-radius: 5px;
+  padding: 5px;
+}*/
 
 .photos-home-main {
   border: 1px solid transparent;
