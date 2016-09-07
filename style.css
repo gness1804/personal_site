@@ -170,15 +170,17 @@ h1 {
 }
 
 #footer {
+  align-items: center;
   border-radius: 5px;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
   margin-top: 70px;
-  text-align: center;
+  /*text-align: center;*/
 }
 
-#footer p {
-  display: inline;
-  margin-left: 50px;
-  padding-top: 60px;
-  text-align: center;
+#footer img {
+  height: 40px;
+  padding: 10px 75px;
+  width: 40px;
 }
